@@ -1,0 +1,379 @@
+:root {
+  --main_color: #3F007E ;
+  --internal_color: #D9D9D9 ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  
+}
+
+.container {
+  width: 100%;
+  padding-top: 24px ;
+  padding-left: 32px;
+ /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+}
+
+nav {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  padding-right: 32px;
+
+
+.links {
+display: flex;
+width: 488px;
+height: 40px;
+gap: 15px;
+
+.logo {
+  width: 160px;
+  background-color: var(--main_color);
+ 
+}
+
+.link {
+  display: flex;
+  height: 40px;
+  gap: 8px;
+  width: 100%;
+  a {
+    flex: 1;
+    background-color: var(--main_color);
+  }
+}
+
+}
+
+.search_avatar_section {
+display: flex;
+width: 370px;
+gap: 12px;
+
+.search {
+  display: flex;
+  background-color: var(--main_color);
+  gap: 10px;
+  flex-grow: 1;
+  align-items: center;
+  padding: 10px 14px ;
+  border-radius: 28px;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  -ms-border-radius: 28px;
+  -o-border-radius: 28px;
+
+div {
+  background-color: var(--internal_color);
+}
+.circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.square {
+  height: 20px;
+  width: 20px;
+}
+
+.rect {
+flex-grow: 1;
+height: 20px;
+}
+
+
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  background-color: var(--main_color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  flex-shrink: 1;
+}
+
+}
+
+}
+
+.tags {
+  height: 32px;
+  gap: 8px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  min-width: 100%;
+
+ 
+
+  span {
+    background-color: var(--main_color);
+    min-width: 80px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+}
+
+
+
+.big_box {
+  height: 320px;
+  gap: 8px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  min-width: 100%;
+ 
+ 
+
+  span {
+    background-color: var(--main_color);
+    min-width: 490px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+}
+
+.bar {
+  width: 285px;
+  height: 40px;
+  background-color: var(--main_color);
+}
+
+
+.cards {
+  height: 112px;
+  gap: 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  min-width: 100%;
+
+ 
+
+  .card {
+    background-color: var(--main_color);
+    min-width: 388px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+
+ section{
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  .line1 {
+    height: 16px;
+    background-color: var(--internal_color);
+  }
+
+  .box_container {
+    display: flex;
+    gap: 8px;
+    height: 16px;
+    .box1 {
+      width: 24px;
+      background-color: var(--internal_color);
+    }
+    .box2 {
+      width: 48px;
+      background-color: var(--internal_color);
+
+    }
+
+
+  }
+
+  .line2 {
+    height: 8px;
+    background-color: var(--internal_color);
+  }
+
+ }
+
+hr {
+
+}
+
+ .card_bottom {
+display: flex;
+justify-content: space-between;
+
+ span {
+  background-color: var(--internal_color);
+  height: 12px;
+  min-width: 80px;
+ }
+
+ .left_card {
+  width: 202px;
+  display: flex;
+  gap: 4px;
+
+  span {
+    height: 12px;
+    flex: 1;
+   }
+ }
+ 
+}
+
+}
+}
+
+/** same to same big-box**/
+.grid-boxes {
+  height: 324px;
+  gap: 8px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  min-width: 100%;
+
+ 
+
+  .grid-box {
+    background-color: var(--main_color);
+    min-width: 388px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 8px;
+    gap: 8px;
+  span {
+    width: 100%;
+    height: 100%;
+    background-color: var(--internal_color);
+  }
+}
+}
+
+.bottom-space {
+  height: 50px;
+}
+
+.big_box {
+ 
+  .slide_botton {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 8px;
+   
+    div {
+      height: 60px;
+      width: 60px;
+      background-color: var(--internal_color);
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+    }
+}
+}
+
+.button_relative {
+  position: relative;
+}
+
+
+/* big display */
+@media screen and (width > 1200px) {
+}
+/* Tablet */
+@media screen and (width < 1200px)  {
+
+  nav {
+    flex-direction: column-reverse;
+    height: auto;
+    gap: 16px;
+
+    .search_avatar_section {
+      width: 100%;
+      justify-content: space-between;
+
+      .search {
+        max-height: 320px;
+      }
+    }
+
+   .links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .link {
+      max-width: 320px;
+    }
+   }
+
+  }
+
+  .container {
+   padding-top: 8px;
+   padding-left: 12px;
+   gap: 12px
+  }
+
+}
+
+
+/* Phone  */
+@media screen and (width < 600px) {
+ 
+}
+
+
+
+/** lomba ekota line katar jonno atota effective na..code remove korle buja jabe**/
+/** chatgpt theke collect kora hoyeche 46:00min a **/
+
+/** tags ar cards a apply korechi big box a apply korinai oita dekhle difference buja jabe **/
+
+.hide_scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* For Firefox */
+.hide_scrollbar {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* General hide_scrollbar styles */
+.hide_scrollbar {
+  overflow: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+}
